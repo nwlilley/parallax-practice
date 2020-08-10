@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "HK Grotesk";
+    src: url("assets/hk-grotesk.woff2"), url("assets/hk-grotesk.woff");
+}
+
+:root {
+    --main-text-color: #333333;
+    --light-text-color: #ffffff;
+    --progress-bar-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "HK Grotesk", Arial, Helvetica, sans-serif;
+    color: var(--main-text-color);
+    font-size: 1.6rem;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: .5rem;
+    background-color: var(--progress-bar-color);
+    z-index: 1;
+    transition: background-color .5s;
+}
+
+.header {
+    position: fixed;
+    top: 3.6rem;
+    left: 3.6rem;
+    z-index: 1;
+    transition: color .5s;
+    
+}
+
+.white {
+    color: var(--light-text-color);
+}
+
+.bg-white {
+    background-color: var(--light-text-color);
+}
+
+.header__client,
+.header__page {
+    font-size: 2.4rem;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 8rem;
+    
+}
+
+.section-one {
+    background-color: #c8dee0;
+}
+
+.section-two {
+    background-color: #c5c5c5;
+}
+
+.section-three {
+    background-color: #292121;
+}
+
+.section-four {
+    background-color: #f3f1f2;
+}
+
+
+
+.content {
+    position: relative;
+}
+
+.content img {
+    max-width: 100vw;
+    position: relative;
+
+}
+.square {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 5rem;
+    left: -5rem;
+}
+
+.circle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5rem;
+    right: -5rem;
+}
+
+.section-one .square {
+    background-color: #d54156;
+}
+
+.section-one .circle {
+    background-color: #5982a0;
+}
+
+.section-two .square {
+    background-color: #d6ac35;
+}
+
+.section-two .circle {
+    background-color: #be3c52;
+}
+
+.section-three .square {
+    background-color: #5f3736;
+}
+
+.section-three .circle {
+    background-color: #6e5f67;
+}
+
+.section-four .square {
+    background-color: #d54156;
+}
+
+.section-four .circle {
+    background-color: #5982a0 ;
+}
+
